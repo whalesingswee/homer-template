@@ -86,7 +86,6 @@ gulp.task('browser-sync', function() {
 
 	gulp.watch(src.css + '{,**/}*.pcss', ['make:postcss']);
 	gulp.watch(src.js + '{,**/}*.js', ['make:scripts']);
-	gulp.watch(src.fonts + '**/*.svg', ['generate-icons']);
 	gulp.watch(basePath.views + '{,**/}*.pug', ['make:html']);
 	gulp.watch('./*.html').on('change', reload);
 });
