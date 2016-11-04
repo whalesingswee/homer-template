@@ -124,7 +124,8 @@ gulp.task('make:postcss', ['make:css_import'], function() {
       autoprefixer: {
         browsers: ['IE >= 9']
       }
-    })
+    }),
+    lost()
 	];
 	return gulp.src([src.css + 'style.css'])
 		.pipe(plumber({
