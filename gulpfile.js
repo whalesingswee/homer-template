@@ -90,7 +90,7 @@ gulp.task('browser-sync', function() {
 	gulp.watch('./*.html').on('change', reload);
 });
 
-gulp.task('views', function () {
+gulp.task('make:html', function () {
   return gulp.src(basePath.views + '*.pug')
   .pipe(pug({
   	pretty: true
